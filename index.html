@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Pipeline</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #0a2463, #3e92cc);
+            min-height: 100vh;
+            color: white;
+        }
+        .pipeline {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        .stage {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .arrow {
+            text-align: center;
+            font-size: 2rem;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="pipeline">
+        <h1>CI/CD Pipeline</h1>
+        <div class="stage">
+            <h2>1. Code</h2>
+            <p>Write and commit code to repository</p>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="stage">
+            <h2>2. Build</h2>
+            <p>Compile and build the application</p>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="stage">
+            <h2>3. Test</h2>
+            <p>Run automated tests</p>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="stage">
+            <h2>4. Deploy</h2>
+            <p>Deploy to production</p>
+        </div>
+    </div>
+</body>
+</html>
